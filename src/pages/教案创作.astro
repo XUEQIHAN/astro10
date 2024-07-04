@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教案创作 - 教案圈</title>
+    <style>
+        body, html {
+            height: 100%;
+            font-family: '微软雅黑', Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            background-image: url('https://pic.vjshi.com/2023-05-07/dcccab112b2f49818f95fd43356607cb/online/puzzle.jpg?x-oss-process=style/w1440_h2880.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(10, 10, 50, 0.7);
+        }
+        .header h1 {
+            color: #90caf9;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ddd;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #3949ab;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 1em;
+        }
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background: #4caf50;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(10, 10, 50, 0.7);
+        }
+    </style>
+       <nav class="nav">
+        <a href="#" class="active">首页</a>
+        <a href="#">教案分享</a>
+        <a href="#">教案创作</a>
+        <a href="#">教案模板</a>
+    </nav>
+</head>
+<body>
+    <div class="header">
+        <h1>教案创作</h1>
+    </div>
+    <div class="container">
+        <h2>创建您的教案</h2>
+        <form action="/submit-teaching-plan" method="post"> <!-- 请根据实际后端逻辑修改action -->
+            <div class="form-group">
+                <label for="title">教案标题</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="intro">简介</label>
+                <textarea id="intro" name="intro" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="objectives">教学目标</label>
+                <textarea id="objectives" name="objectives" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="materials">所需材料</label>
+                <textarea id="materials" name="materials" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="steps">教学步骤</label>
+                <textarea id="steps" name="steps" rows="8" required></textarea>
+            </div>
+            <input type="submit" value="提交教案">
+        </form>
+    </div>
+    <div class="footer">
+        <p>版权所有 © 教案圈 2024</p>
+    </div>
+    <nav class="nav">
+        <a href="#" class="active">首页</a>
+        <a href="#">教案分享</a>
+        <a href="#">教案创作</a>
+        <a href="#">教案模板</a>
+    </nav>
+</body>
+</html>
